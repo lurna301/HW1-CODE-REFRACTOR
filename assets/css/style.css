@@ -10,31 +10,43 @@ body {
 
 
 header {
+    display:flex;
+    justify-content: space-between;
     padding: 20px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     background-color: #2a607c;
     color: #ffffff;
-    padding-top: 15px;
+   
    /* margin-right: 20px;*/
     /*float: right;*/
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 20px;
+    
+}
+
+main{
+    width: 75%;
+    display: inline-block;
+    margin-left: 20px;
+
 }
 
 h1 {
 
-    display: inline-block;
-    font-size: 48px;
-    color: #d9dcd6;
+     font-size: 48px;
+    
 }
+
+
 
 /* nav css added */
 
 nav {
     
-    padding-top: 15px;
+   /* padding-top: 15px;
     margin-right: 20px;
-    float: right;
+    float: right;*/
+    display:flex;
+    justify-content: right;
+    padding-top: 15px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 20px;
 
@@ -42,12 +54,19 @@ nav {
 
 /* a css added */
 
-a {
+nav li {
 
+   /* display: inline;
+    margin-left: 20px;
+    */
+
+    display: inline-flex;
     margin-left: 20px;
     color: #ffffff;
-    text-decoration: none;
+    
 }
+
+
 
 /* figure img css added */
 
@@ -76,10 +95,8 @@ figure img {
 */
 
                  
-/*.header h1 .seo {
-    color: #d9dcd6;
-}
-*/
+
+
 
 /*.header div {
     padding-top: 15px;
@@ -110,6 +127,19 @@ p {
 }
 */
 
+/* pseudo class added*/
+a:link{
+    text-decoration: none;
+    color: #ffffff;
+   
+}
+
+a:visited{
+    text-decoration: none;
+    color: #ffffff;
+}
+
+
 .float-left {
     float: left;
     margin-right: 25px;
@@ -121,10 +151,26 @@ p {
 }
 
 .content {
-    width: 75%;
-    display: inline-block;
-    margin-left: 20px;
+    margin-bottom: 20px;
+    padding: 50px;
+    height: 300px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: #0072bb;
+    color: #ffffff;
 }
+
+.content img {
+    max-height: 200px;
+}
+
+.content h2 {
+    margin-bottom: 20px;
+    font-size: 36px;
+}
+
+/*content*/
+
+
 
 .benefits {
     margin-right: 20px;
@@ -185,7 +231,7 @@ p {
     max-width: 150px;
 }
 
-.search-engine-optimization {
+/*.search-engine-optimization {
     margin-bottom: 20px;
     padding: 50px;
     height: 300px;
@@ -238,7 +284,7 @@ p {
     margin-bottom: 20px;
     font-size: 36px;
 }
-
+*/
 .footer {
     padding: 30px;
     clear: both;
